@@ -67,7 +67,7 @@ actual class GrpcClient private constructor(
         .addHeader("te", "trailers")
         .addHeader("grpc-trace-bin", "")
         .addHeader("grpc-accept-encoding", "gzip")
-        .addHeader("grpc-encoding", "gzip")
+//        .addHeader("grpc-encoding", "gzip")
         .tag(GrpcMethod::class.java, method)
         .method("POST", requestBody)
         .build())
